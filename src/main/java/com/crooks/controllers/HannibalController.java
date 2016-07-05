@@ -49,8 +49,6 @@ public class HannibalController {
         Lecturer lecturer = lectRepo.findOne(lecturerId);
         Review review = new Review(author, text, isGood, lecturer);
         reviewRepo.save(review);
-
-
         return "redirect:/";
     }
 

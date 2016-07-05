@@ -22,7 +22,6 @@ public class Review {
     @Column(nullable = false)
     String text;
 
-
     @Column(nullable = false)
     boolean isGood;
 
@@ -61,11 +60,11 @@ public class Review {
         this.text = text;
     }
 
-    public boolean isGood() {
+    public boolean getIsGood() {
         return isGood;
     }
 
-    public void setGood(boolean good) {
+    public void setIsGood(boolean good) {
         isGood = good;
     }
 }
